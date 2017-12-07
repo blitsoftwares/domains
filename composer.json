@@ -1,0 +1,28 @@
+{
+    "name": "blitsoftwares/domains",
+    "description": "Cadastro e controle de dominios (modulos) e permissões",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Lucas R.Pasquetto",
+            "email": "lucas@blitsoft.com.br",
+            "homepage": "http://www.blitsoft.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+      "psr-4": {
+        "Blit\\Domains\\": "./src"
+      }
+    },
+    "extra": {
+      "laravel":{
+        "providers": [
+          "Blit\\Domains\\Providers\\DomainServiceProvider"
+        ]
+      }
+    }
+}
