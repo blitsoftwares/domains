@@ -32,6 +32,7 @@
                                     {{ csrf_field() }}
                                     <button type="submit" class="btn btn-sm btn-default">{{ trans('BlitDomains::domains.delete') }}</button>
                                     <a href="{{ route('domains.edit',[$obj->id]) }}"><button type="button" class="btn btn-sm btn-default">{{ trans('BlitDomains::domains.edit') }}</button></a>
+                                    <a href="{{ route('permissions.index',[$obj->id]) }}"><button type="button" class="btn btn-sm btn-default">{{ trans('BlitDomains::domains.permissions') }}</button></a>
                                 </div>
                             </form>
                         </td>
