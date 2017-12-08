@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <a href="{{ route('permissions.create', [$domain->id]) }}"><button class="btn btn-default">{{ trans('BlitDomains::permissions.new-register') }}</button></a>
     <a href="{{ route('domains.index') }}"><button class="btn btn-default">{{ trans('BlitDomains::domains.route-back') }}</button></a>
+    <a href="{{ route('permissions.create', [$domain->id]) }}"><button class="btn btn-default">{{ trans('BlitDomains::permissions.new-register') }}</button></a>
     <hr/>
     <div class="panel panel-default">
         <div class="panel-heading">
