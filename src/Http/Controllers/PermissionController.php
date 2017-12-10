@@ -11,8 +11,8 @@ class PermissionController extends Controller {
 
     public function index($id)
     {
-        $domain = Domain::find($id);
-        $permissions = Permission::orderBy('name')->paginate(10);
+        $domain         = Domain::find($id);
+        $permissions    = Permission::domain($domain)->orderBy('name')->paginate(10);
 
         return view('BlitDomains::permissions.index', compact('domain'))
             ->with('permissions',$permissions);

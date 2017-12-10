@@ -12,4 +12,9 @@ class Permission extends Model {
       'domain_id','name','description'
     ];
 
+    public function scopeDomain($query,Domain $domain)
+    {
+        return $query->where('domain_id',$domain->id);
+    }
+
 }
