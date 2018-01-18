@@ -23,6 +23,7 @@ class DomainServiceProvider extends ServiceProvider
 
         Route::namespace("Blit\\Domains\\Http\\Controllers")
         ->middleware(config('BlitDomains.route_middleware'))
+        ->prefix('secure')
         ->group($routeDir);
 
         $this->loadMigrationsFrom($migrationsDir);
