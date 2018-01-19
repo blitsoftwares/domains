@@ -24,7 +24,10 @@ class DomainsTableSeeder extends  Seeder
     {
         $data = [
             ['name' => 'User', 'active' => 1],
-            ['name' => 'Domain', 'active' => 1],
+            ['name' => 'Account', 'active' => 1],
+            ['name' => 'Plans', 'active' => 1],
+            ['name' => 'Plans Occurrences', 'active' => 1],
+            ['name' => 'Domains', 'active' => 1],
         ];
 
         foreach($data as $reg)
